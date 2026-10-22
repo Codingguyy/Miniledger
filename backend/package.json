@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "start": "ts-node src/index.ts",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build":"tsc"
   },
   "dependencies": {
     "cors": "^2.8.5",

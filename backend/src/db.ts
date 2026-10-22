@@ -1,6 +1,6 @@
 import { Pool } from "pg";
 export const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || "postgres://postgres:postgres@localhost:5432/miniledger",
+  connectionString: process.env.DATABASE_URL || "postgresql://postgres:digitalsupabase@db.jahoeurhxorfwglsxfow.supabase.co:5432/postgres",
 });
 export async function setup() {
   await pool.query(`create table if not exists users (
